@@ -1,0 +1,31 @@
+html{
+    height: 100%;
+}
+h1{
+    margin: 0;
+    padding: 15px;
+}
+* {
+    box-sizing: border-box;
+}
+#canvas,
+#tracecanvas {
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+    grid-area: pile;
+    image-rendering: optimizeSpeed;
+}
+#canvases {
+    display: grid;
+    width: 85vmin;
+    height: 85vmin;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 100%;
+}

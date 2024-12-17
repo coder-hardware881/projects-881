@@ -1,0 +1,32 @@
+[
+    {
+        "sides":15,
+        "angle":"360/side",
+        "step":"c_side/(side*0.5)",
+        "init":"center=index.center;",
+        "center":"t.turn_abs(270-angle/2);t.moveup(parseFloat((step/2)/Math.sin(toRad(angle/2)).toFixed(2)));t.turn_abs(0)"
+    },
+    {
+        "sides":12,
+        "reps":45,
+        "angle":"360/side",
+        "init":"reps=index.reps;",
+        "step":"c_side/(side*0.7)"
+    },
+    {
+        "sides":10,
+        "angle":"360/side",
+        "step":"~~c_side/(side*0.34)",
+        "reps":20,
+        "init":"center=index.center;reps=index.reps;t.turn_abs(0)",
+        "center":"t.turn(270-angle/2);t.moveup((step/2)/Math.sin(toRad(angle/2)).toFixed(2)*1);t.turn(90+angle/2);"
+    },
+    {
+        "sides":15,
+        "instep":20,
+        "angle":"(360-(360/side))/2",
+        "step":"c_side*0.8",
+        "init":"t.c=[(c_side-step)/2,c_side/2+step/side];t.turn_abs(0)"
+    },
+    ["Triangle","Square","Pentagon","Hexagon","Septagon","Octagon","Nonagon","Decagon","Hendacagon","Dodecagon","Tridecagon","Tetradecagon","Pentadecagon"]
+]

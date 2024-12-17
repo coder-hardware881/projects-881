@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap" />
+        <base href="./" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Hypocycloid</title>
+        <link rel="icon" type="image/x-icon" href="favicon.svg" />
+        <base href="./" />
+        <link href="../basic.css" preload rel="stylesheet" />
+        <link rel="stylesheet" preload href="controls.css" />
+        <link rel="stylesheet" preload href="circle.css" />
+        <script src="../util/draw.js" defer></script>
+        <script src="../util/math.js" defer></script>
+        <script src="controls.js" defer></script>
+        <script src="circle.js" defer></script>
+        <style>
+            body {
+                font-family: "googlesans", monospace;
+                background-color: var(--clr0);
+                margin: 0;
+            }
+            @font-face {
+                font-family: "googlesans";
+                src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../" class="navb home"></a>
+                    <div class="navb menu">
+                        <input type="checkbox" name="menu" id="menu" />
+                        <label for="menu" id="menu_label"></label>
+                    </div>
+                </li>
+                <li><a href="../bezier_curve/">Bezier Curves</a></li>
+                <li><a href="../patterns/">Patterns</a></li>
+                <li><a class="active" href="./">Hypocycloid</a></li>
+                <li><a href="../linear_eq/">Linear Equation</a></li>
+                <li><a href="../tic-tac-toe/">Tic-Tac-Toe</a></li>
+            </ul>
+        </nav>
+        <h1>Hypocycloid</h1>
+        <main>
+            <div id="canvases">
+                <canvas id="canvas"></canvas>
+                <canvas id="tracecanvas"></canvas>
+            </div>
+            <div id="controls">
+                <div class="control k">
+                    <label>k:</label>
+                    <br />
+                    <input class="k" type="range" min="1" step=".01" max="10" />
+                    <p class="k"></p>
+                </div>
+                <div class="control colour">
+                    <label>Color of line:</label>
+                    <input class="colour" type="color" value="#00ffff" />
+                </div>
+                <div class="control len">
+                    <label>Length:</label>
+                    <br />
+                    <input class="len" type="range" min="10" max="120" />
+                    <p class="len"></p>
+                </div>
+                <div class="control ang">
+                    <label>Rotations</label>
+                    <br />
+                    <input class="ang" type="range" min="1" max="100" />
+                    <p class="ang"></p>
+                </div>
+                <div class="control anim">
+                    <label for="anim">Animation</label>
+                    <input class="anim" id="anim" type="checkbox" value="performance" />
+                </div>
+                <div class="control speed">
+                    <label>Animation Speed(frames per second)</label>
+                    <br />
+                    <input class="speed" type="range" min="15" max="100" />
+                    <p class="speed"></p>
+                </div>
+                <div class="control start">
+                    <div class="start border"></div>
+                    <button class="start">Start</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

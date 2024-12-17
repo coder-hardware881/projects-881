@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic-Tac-Toe</title>
+        <link rel="icon" type="image/x-icon" href="favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" preload href="../basic.css" />
+        <link rel="stylesheet" preload href="tic.css" />
+        <script src="tic.js" defer></script>
+        <style>
+            body {
+                font-family: "googlesans", monospace;
+                background-color: var(--clr0);
+                margin: 0;
+            }
+            html,body{
+                height: 100%;
+            }
+            @font-face {
+                font-family: "googlesans";
+                src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+            }
+            #cont p {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../" class="navb home"></a>
+                    <div class="navb menu">
+                        <input type="checkbox" name="menu" id="menu" />
+                        <label for="menu" id="menu_label"></label>
+                    </div>
+                </li>
+                <li><a href="../bezier_curve/">Bezier Curves</a></li>
+                <li><a href="../patterns/">Patterns</a></li>
+                <li><a href="../hypocycloid/">Hypocycloid</a></li>
+                <li><a href="../linear_eq/">Linear Equation</a></li>
+                <li><a class="active" href="./">Tic-Tac-Toe</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Tic-Tac-Toe</h1>
+            <div id="cont">
+                <p></p>
+                <!-- <div class="l l1"></div> -->
+            </div>
+            <button id="reset">Reset</button>
+        </main>
+    </body>
+</html>

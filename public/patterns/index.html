@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pattern</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <base href="./" />
+        <link rel="stylesheet" preload href="pattern.css" />
+        <link href="../basic.css" preload rel="stylesheet" />
+        <script src="turtle.js" defer></script>
+        <script src="../util/draw.js" defer></script>
+        <script src="controls.js" defer></script>
+        <script src="patterns.js" defer></script>
+        <style>
+            body {
+                font-family: "googlesans", monospace;
+                background-color: var(--clr0);
+                margin: 0;
+                padding: 0;
+            }
+            @font-face {
+                font-family: "googlesans";
+                src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../" class="navb home"></a>
+                    <div class="navb menu">
+                        <input type="checkbox" name="menu" id="menu" />
+                        <label for="menu" id="menu_label"></label>
+                    </div>
+                </li>
+                <li><a href="../bezier_curve/">Bezier Curves</a></li>
+                <li><a class="active" href="./">Patterns</a></li>
+                <li><a href="../hypocycloid/">Hypocycloid</a></li>
+                <li><a href="../linear_eq/">Linear Equation</a></li>
+                <li><a href="../tic-tac-toe/">Tic-Tac-Toe</a></li>
+            </ul>
+        </nav>
+        <h1>Patterns</h1>
+        <main>
+            <div id="cont">
+                <canvas id="myCanvas"></canvas>
+            </div>
+            <div id="controls">
+                <div class="control name">
+                    <label>Pattern:</label>
+                    <br />
+                    <select class="name">
+                        <option value="0">Regular Polygon</option>
+                        <option value="1">Repeating Regular Polygon</option>
+                        <option value="2">Increasing Repeating Regular Polygon</option>
+                        <option value="3">Star</option>
+                    </select>
+                </div>
+                <div class="control side">
+                    <label>Sides:</label>
+                    <br />
+                    <input class="side" type="range" min="30" max="100" />
+                    <p class="side"></p>
+                </div>
+                <div class="control colour">
+                    <label>Color of line:</label>
+                    <input class="colour" type="color" value="#00ffff" />
+                </div>
+                <div class="control speed">
+                    <label>Animation Speed(frames per second)</label>
+                    <input class="speed" type="range" min="5" max="40" value="25" />
+                    <p class="speed"></p>
+                </div>
+                <div class="control start">
+                    <div class="start border"></div>
+                    <button class="start">Start</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

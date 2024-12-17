@@ -1,0 +1,25 @@
+body{
+    background:black;
+    color:black;
+    font-family: 'VT323', monospace;
+    font-size:larger;
+}
+.center{
+    color:whitesmoke;
+    margin:auto;
+}
+p , h1{
+    width: fit-content;
+}
+canvas{
+    border: 1px solid whitesmoke;
+    width: 80vmin;
+    aspect-ratio: 1;
+}
+#canvas_cont{
+    width: 100%;
+    text-align: center;
+}
+footer~div{
+    visibility:hidden;
+}

@@ -1,0 +1,47 @@
+button {
+    border: 2px inset var(--clr2);
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: var(--clr2);
+    margin: auto;
+}
+button:hover {
+    border-style: outset;
+    transition-duration: 100ms;
+    transform: scale(1.1);
+}
+canvas {
+    grid-area: pile;
+    height: inherit;
+    width: inherit;
+}
+#mycanvas {
+    z-index: 2;
+}
+#canvases {
+    display: grid;
+    width: 80vmin;
+    height: 80vmin;
+    overflow: hidden;
+    border: 1px solid var(--clr4);
+}
+#pandbtn > div {
+    border: 1px solid var(--clr4);
+}
+p {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    border: 1px solid var(--clr4);
+}
+#pandbtn {
+    padding:10px;
+    gap: 10em;
+}
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

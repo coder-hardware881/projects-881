@@ -1,0 +1,15 @@
+body{
+    background:black;
+    color:whitesmoke;
+    font-family: 'VT323', monospace;
+    font-size:larger;
+    margin:0px;
+    display: flex;
+    justify-content: center;
+}
+canvas{
+    border:inset;
+}
+#div{
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+body{
+    color: white;
+    text-align: center;
+    font-family: 'font', monospace;
+    background-color: black;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "font";
+    src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+}
+#canvas{
+    box-sizing: border-box;
+    height:100%;
+    aspect-ratio: 1;
+    margin: auto;
+}
+#cont{
+    box-sizing: border-box;
+    height:60vmin;
+    width:100%;
+}
+h1{
+    box-sizing: border-box;
+    margin:5px;
+}
+p{
+    box-sizing: border-box;
+    margin: 3px;
+}

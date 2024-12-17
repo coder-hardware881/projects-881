@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Linear Equations</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../basic.css" preload rel="stylesheet" />
+        <style>
+            body {
+                font-family: "googlesans", monospace;
+                background-color: var(--clr0);
+                margin: 0;
+            }
+            @font-face {
+                font-family: "googlesans";
+                src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+            }
+            .b {
+                width: fit-content;
+                margin: auto;
+                border: 1px var(--clr5) solid;
+                padding: 20px;
+                border-radius: 20px;
+            }
+        </style>
+        <script src="fraction.js" defer></script>
+        <script src="linear.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../" class="navb home"></a>
+                    <div class="navb menu">
+                        <input type="checkbox" name="menu" id="menu" />
+                        <label for="menu" id="menu_label"></label>
+                    </div>
+                </li>
+                <li><a href="../bezier_curve/">Bezier Curves</a></li>
+                <li><a href="../patterns/">Patterns</a></li>
+                <li><a href="../hypocycloid/">Hypocycloid</a></li>
+                <li><a class="active" href="./">Linear Equation</a></li>
+                <li><a href="../tic-tac-toe/">Tic-Tac-Toe</a></li>
+            </ul>
+        </nav>
+        <div class="b">
+            <label for="eq">Linear Equation:</label>
+            <input type="text" id="eq" />
+            <br />
+            <button id="button">Calculate</button>
+            <p id="p">$$x=$$</p>
+            <br />
+            <br />
+            <p>
+                Instructions:
+                <br />
+                Don't put \(6*x\;\;as\;\;6x\).
+                <br />
+                Input only linear equations.
+                <br />
+                Example:
+                <br />
+                $$10*x=x+6\;\;where\;x=\frac{2}{3}$$
+            </p>
+        </div>
+    </body>
+</html>
