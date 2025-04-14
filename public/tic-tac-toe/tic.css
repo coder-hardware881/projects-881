@@ -41,16 +41,16 @@ main {
     content: "";
     display: block;
     height: 100%;
-    background-image: url("circle.svg");
+    background-image: url("cross.svg");
     opacity: 0.5;
     background-size: 100%;
 }
 .cr.sq {
-    background-image: url("cross.svg");
+    background-image: url("circle.svg");
     background-size: 100%;
 }
 .cl.sq {
-    background-image: url("circle.svg");
+    background-image: url("cross.svg");
     background-size: 100%;
 
 }

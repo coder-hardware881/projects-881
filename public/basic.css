@@ -5,6 +5,31 @@
     --clr3: #003a61;
     --clr4: #00406c;
     --clr5: #58c8ea;
+    /*--clr0: #f7fbff;
+    --clr50: #e6f4ff;
+    --clr1: #d7edff;
+    --clr2: #abdbff;
+    --clr3: #75bfff;
+    --clr4: #45a3fe;
+    --clr45: #007cff;
+    --clr5: #0074e8;
+    --clr6: #005fcb;
+    --clr7: #004ba9;
+    --clr8: #003c96;
+    --clr9: #002966;*/
+    /*--color-teal-spabattical-0: #f7fdfc;
+    --color-teal-spabattical-50: #e6faf5;
+    --color-teal-spabattical-100: #ccf6ee;
+    --color-teal-spabattical-200: #75e4d5;
+    --color-teal-spabattical-300: #48d5c6;
+    --color-teal-spabattical-400: #26c0b4;
+    --color-teal-spabattical-450: #009990;
+    --color-teal-spabattical-500: #00857c;
+    --color-teal-spabattical-600: #006b6c;
+    --color-teal-spabattical-700: #005c62;
+    --color-teal-spabattical-800: #005062;
+    --color-teal-spabattical-900: #003440;
+    --color-green-matchacado-0: #f6fdf5; */
     --track-height: 0.5rem;
     --nav-height: calc(1.1rem + 0.5em);
 }
@@ -13,6 +38,7 @@ body {
     color-scheme: dark light;
     color: var(--clr5);
     overflow: overlay;
+    background-color: var(--clr0);
 }
 * {
     box-sizing: border-box;
