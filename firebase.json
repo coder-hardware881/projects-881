@@ -1,6 +1,13 @@
 {
     "hosting": {
         "public": "public",
-        "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**",
+            "**/linear_eq/**",
+            "**/tic-tac-toe/**",
+            "**/telgu/**"
+        ]
     }
 }
