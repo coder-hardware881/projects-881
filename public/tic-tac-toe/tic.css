@@ -45,11 +45,11 @@ main {
     opacity: 0.5;
     background-size: 100%;
 }
-.cr.sq {
+.cl.sq {
     background-image: url("circle.svg");
     background-size: 100%;
 }
-.cl.sq {
+.cr.sq {
     background-image: url("cross.svg");
     background-size: 100%;
 
@@ -62,7 +62,7 @@ main {
     text-align: center;
     border: 2px solid rgb(0, 110, 110);
     border-radius: 20px;
-    top: 50%;
+    top: 50% ;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
