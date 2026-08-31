@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Bezier Curves</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <base href="./" />
-        <link rel="icon" type="image/x-icon" href="favicon.svg" />
-        <link href="../basic.css" preload rel="stylesheet" />
-        <link rel="stylesheet" preload href="curve.css" />
-        <script src="../util/draw.js" defer></script>
-        <script src="curve.js" defer></script>
-        <style>
-            body {
-                font-family: "googlesans", monospace;
-                background-color: var(--clr0);
-                margin: 0;
-            }
-            @font-face {
-                font-family: "googlesans";
-                src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../" class="navb home"></a>
-                    <div class="navb menu">
-                        <input type="checkbox" name="menu" id="menu" />
-                        <label for="menu" id="menu_label"></label>
-                    </div>
-                </li>
-                <li><a class="active" href="./">Bezier Curves</a></li>
-                <li><a href="../patterns/">Patterns</a></li>
-                <li><a href="../hypocycloid/">Hypocycloid</a></li>
-                <li><a href="../linear_eq/">Linear Equation</a></li>
-                <li><a href="../tic-tac-toe/">Tic-Tac-Toe</a></li>
-            </ul>
-        </nav>
-        <h1>Bezier Curves</h1>
-        <main>
-            <div id="canvases">
-                <canvas id="tracecanvas"></canvas>
-                <canvas id="mycanvas"></canvas>
-            </div>
-            <div id="pandbtn">
-                <p>
-                    <svg height="8" width="6">
-                        <circle cx="3" cy="3" r="3" fill="#f00"></circle>
-                    </svg>
-                    Start Point
-                    <br />
-                    <svg height="8" width="6">
-                        <circle cx="3" cy="3" r="3" fill="#0ff"></circle>
-                    </svg>
-                    Control Points
-                    <br />
-                    <svg height="8" width="6">
-                        <circle cx="3" cy="3" r="3" fill="#0f0"></circle>
-                    </svg>
-                    End Point
-                </p>
-                <!--<div>-->
-                <!--
+
+<head>
+    <title>Bezier Curves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <base href="./" />
+    <link rel="icon" type="image/x-icon" href="favicon.svg" />
+    <link href="../basic.css" preload rel="stylesheet" />
+    <link rel="stylesheet" preload href="curve.css" />
+    <script src="../util/draw.js" defer></script>
+    <script src="curve.js" defer></script>
+    <style>
+        body {
+            font-family: "googlesans", monospace;
+            background-color: var(--clr0);
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: "googlesans";
+            src: url("https://fonts.gstatic.com/s/googlesans/v16/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2") format("woff2");
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="../" class="navb home"></a>
+                <div class="navb menu">
+                    <input type="checkbox" name="menu" id="menu" />
+                    <label for="menu" id="menu_label"></label>
+                </div>
+            </li>
+            <li><a class="active" href="./">Bezier Curves</a></li>
+            <li><a href="../patterns/">Patterns</a></li>
+            <li><a href="../hypocycloid/">Hypocycloid</a></li>
+        </ul>
+    </nav>
+    <h1>Bezier Curves</h1>
+    <main>
+        <div id="canvases">
+            <canvas id="tracecanvas"></canvas>
+            <canvas id="mycanvas"></canvas>
+        </div>
+        <div id="pandbtn">
+            <p>
+                <svg height="8" width="6">
+                    <circle cx="3" cy="3" r="3" fill="#f00"></circle>
+                </svg>
+                Start Point
+                <br />
+                <svg height="8" width="6">
+                    <circle cx="3" cy="3" r="3" fill="#0ff"></circle>
+                </svg>
+                Control Points
+                <br />
+                <svg height="8" width="6">
+                    <circle cx="3" cy="3" r="3" fill="#0f0"></circle>
+                </svg>
+                End Point
+            </p>
+            <!--<div>-->
+            <!--
                     <label class="animate">Animate:<input type="checkbox" class="animate" value="none"></label>
                     <label style="display:none;"class="no.of_point">No.of points:<input type="number" class="no.of_point" min="3" max="7" value="4"></label>
                     -->
-                <button id="reset" style="display: none">Reset</button>
-                <br />
-                <button id="animatebtn" style="display: none">Start animation</button>
-                <!--</div>-->
-            </div>
-        </main>
-    </body>
+            <button id="reset" style="display: none">Reset</button>
+            <br />
+            <button id="animatebtn" style="display: none">Start animation</button>
+            <!--</div>-->
+        </div>
+    </main>
+</body>
+
 </html>
