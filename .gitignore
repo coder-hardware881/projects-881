@@ -65,11 +65,11 @@ node_modules/
 # dotenv environment variables file
 .env
 
-.vscode/
+../.vscode/
 
 # folders
-telgu/
-linear_eq/
-tic-tac-toe/
-basketball/
-google6f8e1c3d0b6e7a2.html
+public/telgu/
+public/linear_eq/
+public/tic-tac-toe/
+public/basketball/
+public/google6f8e1c3d0b6e7a2.html
